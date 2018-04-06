@@ -1,0 +1,62 @@
+{
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "team.showWelcomeMessage": false,
+  "editor.lineNumbers": "relative",
+  "vim.easymotion": true,
+  "vim.sneak": true,
+  "vim.incsearch": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.cmdLineInitialColon": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j","j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.otherModesKeyBindingsNonRecursive": [
+    { "before": ["l"], "after": ["h"] },
+    { "before": [";"], "after": ["l"] },
+    {
+      "before": ["<leader>","p"],
+      "after": ["\"","_","d","P"]
+    },
+    {
+      "before":["<C-n>"], "after":[], "commands": [ { "command": ":nohl" } ]
+    },
+    {
+      "before": ["Z", "Z"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.files.save",
+          "args": []
+        },
+        {
+          "command": "workbench.action.closeActiveEditor",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "s"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.files.save",
+          "args": []
+        }
+      ]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys":{
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-h>": false,
+    "<C-v>": false,
+    "<C-c>": false,
+    "<C-b>": false
+  }
+}
