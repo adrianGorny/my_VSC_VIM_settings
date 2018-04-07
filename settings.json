@@ -1,7 +1,8 @@
 {
+  "team.showWelcomeMessage": false,
+  "editor.minimap.enabled": false, 
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
-  "team.showWelcomeMessage": false,
   "editor.lineNumbers": "relative",
   "vim.easymotion": true,
   "vim.sneak": true,
@@ -16,6 +17,8 @@
     }
   ],
   "vim.otherModesKeyBindingsNonRecursive": [
+    { "before": ["<C-j>"], "after": ["g", "T"] },
+    { "before": ["<C-k>"], "after": ["g", "t"] },
     { "before": ["l"], "after": ["h"] },
     { "before": [";"], "after": ["l"] },
     {
@@ -58,5 +61,20 @@
     "<C-v>": false,
     "<C-c>": false,
     "<C-b>": false
+  },
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors": {
+      "normal": ["#8FBCBB", "#434C5E"],
+      "insert": "#BF616A",
+      "visual": "#B48EAD",
+      "visualline": "#B48EAD",
+      "visualblock": "#A3BE8C",
+      "replace": "#D08770"
+  },
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#8FBCBB",
+    "statusBar.noFolderBackground": "#8FBCBB",
+    "statusBar.debuggingBackground": "#8FBCBB",
+    "statusBar.foreground": "#434C5E"
   }
 }
