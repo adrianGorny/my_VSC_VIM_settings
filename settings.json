@@ -1,5 +1,4 @@
 {
-  "team.showWelcomeMessage": false,
   "editor.minimap.enabled": false, 
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
@@ -31,16 +30,7 @@
     {
       "before": ["Z", "Z"],
       "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.files.save",
-          "args": []
-        },
-        {
-          "command": "workbench.action.closeActiveEditor",
-          "args": []
-        }
-      ]
+      "commands": [ { "command": ":wq" } ]
     },
     {
       "before": ["<leader>", "s"],
