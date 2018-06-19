@@ -1,4 +1,4 @@
-{
+
   "editor.minimap.enabled": false, 
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
@@ -15,33 +15,45 @@
       "after": ["<Esc>"]
     }
   ],
-  "vim.otherModesKeyBindingsNonRecursive": [
+  "vim.normalModeKeyBindingsNonRecursive": [
     { "before": ["<C-j>"], "after": ["g", "T"] },
     { "before": ["<C-k>"], "after": ["g", "t"] },
     { "before": ["l"], "after": ["h"] },
     { "before": [";"], "after": ["l"] },
     {
+      "before": [":"],
+      "commands": [ { "command": "workbench.action.showCommands" } ]
+    },
+    {
       "before": ["<leader>","p"],
       "after": ["\"","_","d","P"]
     },
     {
-      "before":["<C-n>"], "after":[], "commands": [ { "command": ":nohl" } ]
+      "before":["<C-n>"], 
+      "commands": [ { "command": ":nohl" } ]
     },
     {
       "before": ["Z", "Z"],
-      "after": [],
       "commands": [ { "command": ":wq" } ]
     },
     {
       "before": ["<leader>", "s"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.files.save",
-          "args": []
-        }
-      ]
+      "commands": [ { "command": "workbench.action.files.save" } ]
     }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [ "p", ],
+      "after": [ "p", "g", "v", "y" ]
+    }, 
+    {
+      "before": [ ">" ],
+      "commands": [ { "command": "editor.action.indentLines" } ]
+    },
+    {
+      "before": [ "<" ],
+      "commands": [ { "command": "editor.action.outdentLines" } ]
+    },
   ],
   "vim.leader": "<space>",
   "vim.handleKeys":{
