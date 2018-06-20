@@ -1,4 +1,4 @@
-
+{
   "editor.minimap.enabled": false, 
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
@@ -20,10 +20,6 @@
     { "before": ["<C-k>"], "after": ["g", "t"] },
     { "before": ["l"], "after": ["h"] },
     { "before": [";"], "after": ["l"] },
-    {
-      "before": [":"],
-      "commands": [ { "command": "workbench.action.showCommands" } ]
-    },
     {
       "before": ["<leader>","p"],
       "after": ["\"","_","d","P"]
