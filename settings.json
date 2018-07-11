@@ -8,7 +8,6 @@
   "vim.incsearch": true,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
-  "vim.cmdLineInitialColon": true,
   "vim.insertModeKeyBindings": [
     {
       "before": ["j","j"],
@@ -21,8 +20,12 @@
     { "before": ["l"], "after": ["h"] },
     { "before": [";"], "after": ["l"] },
     {
-      "before": ["<leader>","p"],
-      "after": ["\"","_","d","P"]
+      "before": ["<leader>","<leader>",";"],
+      "after": ["<leader>","<leader>","l"]
+    }, 
+    {
+      "before": ["<leader>","<leader>","l"],
+      "after": ["<leader>","<leader>","h"]
     },
     {
       "before":["<C-n>"], 
