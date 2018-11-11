@@ -53,7 +53,7 @@
       "before": [ "<" ],
       "commands": [ { "command": "editor.action.outdentLines" } ]
     },
-  ],
+ ],
   "vim.leader": "<space>",
   "vim.handleKeys":{
     "<C-a>": false,
@@ -65,11 +65,22 @@
   },
   "vim.statusBarColorControl": true,
   "workbench.colorCustomizations": {
-    "statusBar.background": "#5f0000",
-    "statusBar.noFolderBackground": "#5f0000",
-    "statusBar.debuggingBackground": "#5f0000"
+    "statusBar.background": "#005f5f",
+    "statusBar.noFolderBackground": "#005f5f",
+    "statusBar.debuggingBackground": "#005f5f"
   },
-  "typescript.updateImportsOnFileMove.enabled": "never",
+  "typescript.updateImportsOnFileMove.enabled":"prompt",
   "window.zoomLevel": -1,
   "breadcrumbs.enabled": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.folders.color": "#90a4ae",
+  "material-icon-theme.files.associations": {
+    "**.actions.ts": "Ngrx-actions",
+    "**.reducer.ts": "Ngrx-reducer",
+    "**.effects.ts": "Ngrx-effects",
+    "**.selectors.ts": "Ngrx-entity",
+  },
+  "material-icon-theme.folders.associations": {
+    "store": "Ngrx-state",
+  },
 }
