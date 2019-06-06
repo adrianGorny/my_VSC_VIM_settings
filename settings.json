@@ -10,7 +10,7 @@
   "vim.hlsearch": true,
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j","j"],
+     "before": ["j","j"],
       "after": ["<Esc>"]
     }
   ],
@@ -72,15 +72,14 @@
   "typescript.updateImportsOnFileMove.enabled":"prompt",
   "window.zoomLevel": -1,
   "breadcrumbs.enabled": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "material-icon-theme.folders.color": "#90a4ae",
-  "material-icon-theme.files.associations": {
-    "**.actions.ts": "Ngrx-actions",
-    "**.reducer.ts": "Ngrx-reducer",
-    "**.effects.ts": "Ngrx-effects",
-    "**.selectors.ts": "Ngrx-entity",
+  "editor.formatOnSave": false,
+  "[javascript]": {
+    "editor.formatOnSave": true
+  }, 
+  "[typescript]": {
+    "editor.formatOnSave": true
   },
-  "material-icon-theme.folders.associations": {
-    "store": "Ngrx-state",
-  },
+  "[javascriptreact]": { 
+    "editor.formatOnSave": true 
+  } 
 }
