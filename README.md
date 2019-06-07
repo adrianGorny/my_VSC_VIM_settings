@@ -1,2 +1,7 @@
 # my_VSC_VIM_settings
-vsc_vim
+
+## Thats Visual Studio Code settings file.
+
+### used with:
+vsc_vim, typescript, Prettier
+
