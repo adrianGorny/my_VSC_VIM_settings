@@ -1,7 +1,5 @@
 {
-  "editor.minimap.enabled": false, 
-  "editor.tabSize": 2,
-  "editor.detectIndentation": false,
+  "editor.minimap.enabled": false,
   "editor.lineNumbers": "relative",
   "vim.easymotion": true,
   "vim.sneak": true,
@@ -10,7 +8,7 @@
   "vim.hlsearch": true,
   "vim.insertModeKeyBindings": [
     {
-     "before": ["j","j"],
+      "before": ["j", "j"],
       "after": ["<Esc>"]
     }
   ],
@@ -20,42 +18,42 @@
     { "before": ["l"], "after": ["h"] },
     { "before": [";"], "after": ["l"] },
     {
-      "before": ["<leader>","<leader>",";"],
-      "after": ["<leader>","<leader>","l"]
-    }, 
-    {
-      "before": ["<leader>","<leader>","l"],
-      "after": ["<leader>","<leader>","h"]
+      "before": ["<leader>", "<leader>", ";"],
+      "after": ["<leader>", "<leader>", "l"]
     },
     {
-      "before":["<C-n>"], 
-      "commands": [ { "command": ":nohl" } ]
+      "before": ["<leader>", "<leader>", "l"],
+      "after": ["<leader>", "<leader>", "h"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [{ "command": ":nohl" }]
     },
     {
       "before": ["Z", "Z"],
-      "commands": [ { "command": ":wq" } ]
+      "commands": [{ "command": ":wq" }]
     },
     {
       "before": ["<leader>", "s"],
-      "commands": [ { "command": "workbench.action.files.save" } ]
+      "commands": [{ "command": "workbench.action.files.save" }]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "before": [ "p", ],
-      "after": [ "p", "g", "v", "y" ]
-    }, 
-    {
-      "before": [ ">" ],
-      "commands": [ { "command": "editor.action.indentLines" } ]
+      "before": ["p"],
+      "after": ["p", "g", "v", "y"]
     },
     {
-      "before": [ "<" ],
-      "commands": [ { "command": "editor.action.outdentLines" } ]
+      "before": [">"],
+      "commands": [{ "command": "editor.action.indentLines" }]
     },
- ],
+    {
+      "before": ["<"],
+      "commands": [{ "command": "editor.action.outdentLines" }]
+    }
+  ],
   "vim.leader": "<space>",
-  "vim.handleKeys":{
+  "vim.handleKeys": {
     "<C-a>": false,
     "<C-f>": false,
     "<C-h>": false,
@@ -63,23 +61,18 @@
     "<C-c>": false,
     "<C-b>": false
   },
-  "vim.statusBarColorControl": true,
-  "workbench.colorCustomizations": {
-    "statusBar.background": "#005f5f",
-    "statusBar.noFolderBackground": "#005f5f",
-    "statusBar.debuggingBackground": "#005f5f"
-  },
-  "typescript.updateImportsOnFileMove.enabled":"prompt",
+  "vim.statusBarColorControl": false,
+  "typescript.updateImportsOnFileMove.enabled": "prompt",
   "window.zoomLevel": -1,
   "breadcrumbs.enabled": false,
-  "editor.formatOnSave": false,
-  "[javascript]": {
-    "editor.formatOnSave": true
-  }, 
-  "[typescript]": {
-    "editor.formatOnSave": true
-  },
-  "[javascriptreact]": { 
-    "editor.formatOnSave": true 
-  } 
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "html.format.wrapAttributes": "force",
+  "html.format.enable": true,
+  "html.format.wrapLineLength": 110,
+  "prettier.disableLanguages": ["html"],
+  "html-css-class-completion.includeGlobPattern": "**/*.{scss,html}",
+  "workbench.iconTheme": "vscode-icons"
 }
