@@ -72,7 +72,5 @@
   "html.format.wrapAttributes": "force",
   "html.format.enable": true,
   "html.format.wrapLineLength": 110,
-  "prettier.disableLanguages": ["html"],
-  "html-css-class-completion.includeGlobPattern": "**/*.{scss,html}",
-  "workbench.iconTheme": "vscode-icons"
+  "prettier.disableLanguages": ["html"]
 }
